@@ -14,7 +14,7 @@ import java.util.Random
 class GameActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGameBinding
     private var score = 0
-    private var countdown = 30
+    private var countdown = 3
 
     private var runnable = Runnable {}
     private var handler = Handler(Looper.getMainLooper())
@@ -102,7 +102,7 @@ class GameActivity : AppCompatActivity() {
     }
 
     fun buttonImage(view: View) {
-        binding.textViewScore.text = "Score: ${score}"
         score++
+        binding.textViewScore.text = "Score: ${score}"
     }
 }
