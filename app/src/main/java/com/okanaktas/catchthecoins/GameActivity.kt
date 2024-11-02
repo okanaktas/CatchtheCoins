@@ -1,6 +1,7 @@
 package com.okanaktas.catchthecoins
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -21,13 +22,18 @@ class GameActivity : AppCompatActivity() {
 
     private var imageArray = ArrayList<ImageView>()
 
+    private lateinit var sharedPref: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityGameBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
-        val input = intent.getIntExtra("selected_image_id",R.drawable.bitcoin)
+        sharedPref = getSharedPreferences("com.okanaktas.catchthecoins", MODE_PRIVATE)
+
+
+        val input = intent.getIntExtra("selected_image_id", R.drawable.bitcoin)
 
         imageArray.add(binding.imageView)
         imageArray.add(binding.imageView2)
@@ -77,6 +83,7 @@ class GameActivity : AppCompatActivity() {
             if (countdown < 0) {
                 handler.removeCallbacks(runnable)
                 showEndDialog()
+                sharedPref.edit().putInt("lastScore", score).apply()
             }
         }
         handler.post(runnable)
