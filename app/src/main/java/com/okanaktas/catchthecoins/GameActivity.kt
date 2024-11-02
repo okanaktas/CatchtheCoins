@@ -61,7 +61,7 @@ class GameActivity : AppCompatActivity() {
                 image.visibility = View.INVISIBLE
             }
             val random = Random()
-            val randomIndex = random.nextInt(13) //12 değerim olduğu için
+            val randomIndex = random.nextInt(12) //0-11 arasında rastgele bir indeks üretiyoruz
             imageArray[randomIndex].visibility = View.VISIBLE
 
             if (countdown < 0) {
