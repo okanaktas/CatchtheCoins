@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Catch the  Coins"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
-        android:text="Choose Coins"
+        android:text="Choose a coin to start the game"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -150,6 +150,7 @@
             android:layout_width="90dp"
             android:layout_height="70dp"
             android:layout_weight="1"
+            android:onClick="buttonHome"
             app:srcCompat="@drawable/home" />
 
         <ImageView
@@ -157,6 +158,7 @@
             android:layout_width="90dp"
             android:layout_height="70dp"
             android:layout_weight="1"
+            android:onClick="buttonSettings"
             app:srcCompat="@drawable/setting" />
 
     </LinearLayout>
