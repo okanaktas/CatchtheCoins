@@ -16,6 +16,11 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(view)
     }
 
+    fun buttonGame(view: View) {
+        val intent = Intent(this@WelcomeActivity, GameActivity::class.java)
+        startActivity(intent)
+    }
+
     fun buttonHome(view: View) {
         val intent = Intent(this@WelcomeActivity, WelcomeActivity::class.java)
         finish()

@@ -13,11 +13,20 @@ import com.okanaktas.catchthecoins.databinding.ActivitySettingsBinding
 class SettingsActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySettingsBinding
 
+    private var speed = 0
+    private var countdown = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+    }
+
+
+    fun buttonReset(view : View){
+        speed = 0
+        countdown = 60
     }
 
     fun buttonHome(view: View) {

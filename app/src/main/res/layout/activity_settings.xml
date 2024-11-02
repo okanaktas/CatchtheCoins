@@ -54,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:gravity="center"
+            android:onClick="buttonReset"
             android:text="Reset"
             android:textColor="#2196F3"
             android:textSize="18sp" />

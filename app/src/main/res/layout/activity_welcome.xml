@@ -93,6 +93,7 @@
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="buttonGame"
                 app:srcCompat="@drawable/dollar" />
 
             <ImageView
