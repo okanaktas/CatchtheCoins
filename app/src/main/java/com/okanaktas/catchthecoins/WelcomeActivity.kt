@@ -14,10 +14,16 @@ class WelcomeActivity : AppCompatActivity() {
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
     }
 
-    fun buttonGame(view: View) {
+    fun imageClick(view: View) {
+        // Seçilen görselin ID'sini al
+        val imageId = view.id
+        println(imageId)
+
         val intent = Intent(this@WelcomeActivity, GameActivity::class.java)
+        intent.putExtra("selected_image_id",imageId)
         startActivity(intent)
     }
 

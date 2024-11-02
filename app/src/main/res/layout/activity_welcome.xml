@@ -54,6 +54,7 @@
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/coin" />
 
             <ImageView
@@ -62,6 +63,7 @@
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/shiba" />
 
             <ImageView
@@ -70,6 +72,7 @@
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/polygon" />
 
         </TableRow>
@@ -85,6 +88,7 @@
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/ton" />
 
             <ImageView
@@ -93,7 +97,7 @@
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
                 android:layout_marginBottom="10dp"
-                android:onClick="buttonGame"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/dollar" />
 
             <ImageView
@@ -102,6 +106,7 @@
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
                 android:layout_marginBottom="10dp"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/ethereum" />
 
         </TableRow>
@@ -116,6 +121,7 @@
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/usdt" />
 
             <ImageView
@@ -123,6 +129,7 @@
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/trx" />
 
             <ImageView
@@ -130,6 +137,7 @@
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
+                android:onClick="imageClick"
                 app:srcCompat="@drawable/bitcoin" />
 
         </TableRow>
