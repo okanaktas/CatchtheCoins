@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".SettingsActivity">
 
     <TextView
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Catch the  Coins"
+        android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,8 +38,10 @@
             android:layout_height="60dp"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:hint="Game Speed"
-            android:inputType="text" />
+            android:hint="Game Speed:"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
 
         <EditText
             android:id="@+id/editTextCountdown"
@@ -46,7 +50,9 @@
             android:layout_marginBottom="10dp"
             android:ems="10"
             android:hint="Countdown:"
-            android:inputType="number" />
+            android:inputType="number"
+            android:textColor="#000000"
+            android:textColorHint="#808080" />
 
         <TextView
             android:id="@+id/textViewReset"
@@ -65,6 +71,7 @@
             android:layout_height="55dp"
             android:backgroundTint="#4CAF50"
             android:text="Save"
+            android:textColor="#FFFFFF"
             android:textSize="20sp" />
     </LinearLayout>
 
