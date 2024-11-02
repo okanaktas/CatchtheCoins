@@ -18,12 +18,22 @@ class WelcomeActivity : AppCompatActivity() {
     }
 
     fun imageClick(view: View) {
-        // Seçilen görselin ID'sini al
-        val imageId = view.id
-        println(imageId)
+        // Seçilen görselin kaynağını tanımlama
+        val imageId = when (view.id) {
+            R.id.imageViewBitcoin -> R.drawable.bitcoin
+            R.id.imageViewCoin -> R.drawable.coin
+            R.id.imageViewDollar -> R.drawable.dollar
+            R.id.imageViewEthereum -> R.drawable.ethereum
+            R.id.imageViewPolygon -> R.drawable.polygon
+            R.id.imageViewShiba -> R.drawable.shiba
+            R.id.imageViewTon -> R.drawable.ton
+            R.id.imageViewTrx -> R.drawable.trx
+            R.id.imageViewUsdt -> R.drawable.usdt
+            else -> R.drawable.ic_launcher_background // Varsayılan bir resim
+        }
 
         val intent = Intent(this@WelcomeActivity, GameActivity::class.java)
-        intent.putExtra("selected_image_id",imageId)
+        intent.putExtra("selected_image_id", imageId) // Görselin drawable kaynağını gönder
         startActivity(intent)
     }
 

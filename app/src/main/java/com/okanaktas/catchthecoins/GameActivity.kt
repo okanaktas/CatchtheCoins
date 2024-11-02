@@ -14,15 +14,12 @@ import java.util.Random
 class GameActivity : AppCompatActivity() {
     private lateinit var binding: ActivityGameBinding
     private var score = 0
-    private var countdown = 60
+    private var countdown = 30
 
     private var runnable = Runnable {}
     private var handler = Handler(Looper.getMainLooper())
 
     private var imageArray = ArrayList<ImageView>()
-
-    // Seçilen görselin ID'si
-    private var selectedImageId: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,23 +27,36 @@ class GameActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        val input = intent.getIntExtra("selected_image_id",R.drawable.bitcoin)
+
+        imageArray.add(binding.imageView)
+        imageArray.add(binding.imageView2)
+        imageArray.add(binding.imageView3)
+        imageArray.add(binding.imageView4)
+        imageArray.add(binding.imageView5)
+        imageArray.add(binding.imageView6)
+        imageArray.add(binding.imageView7)
+        imageArray.add(binding.imageView8)
+        imageArray.add(binding.imageView9)
+        imageArray.add(binding.imageView10)
+        imageArray.add(binding.imageView11)
         imageArray.add(binding.imageView12)
-        imageArray.add(binding.imageView13)
-        imageArray.add(binding.imageView14)
-        imageArray.add(binding.imageView15)
-        imageArray.add(binding.imageView16)
-        imageArray.add(binding.imageView17)
-        imageArray.add(binding.imageView18)
-        imageArray.add(binding.imageView19)
-        imageArray.add(binding.imageView20)
-        imageArray.add(binding.imageView21)
-        imageArray.add(binding.imageView22)
-        imageArray.add(binding.imageView23)
+
+        /*
+        for(i in imageArray){
+           i.id = input
+            println("Görsel id'si ${i.id}")
+        }
+        println(imageArray[0].id)
+         */
+
+        // Tüm ImageView'lerin kaynağını ayarlayın
+        for (image in imageArray) {
+            image.setImageResource(input) // Burada kaynak resim ayarlandı
+        }
+
 
         hideImages()
-
-
-        selectedImageId = intent.getIntExtra("selected_image_id", 0)
 
     }
 

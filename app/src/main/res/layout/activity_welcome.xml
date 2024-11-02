@@ -49,7 +49,7 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageViewCoin"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
@@ -58,7 +58,7 @@
                 app:srcCompat="@drawable/coin" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageViewShiba"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
@@ -67,7 +67,7 @@
                 app:srcCompat="@drawable/shiba" />
 
             <ImageView
-                android:id="@+id/imageView9"
+                android:id="@+id/imageViewPolygon"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
@@ -83,7 +83,7 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageViewTon"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
@@ -92,7 +92,7 @@
                 app:srcCompat="@drawable/ton" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/imageViewDollar"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
@@ -101,7 +101,7 @@
                 app:srcCompat="@drawable/dollar" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageViewEthereum"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
@@ -117,7 +117,7 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView8"
+                android:id="@+id/imageViewUsdt"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
@@ -125,7 +125,7 @@
                 app:srcCompat="@drawable/usdt" />
 
             <ImageView
-                android:id="@+id/imageView7"
+                android:id="@+id/imageViewTrx"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
@@ -133,7 +133,7 @@
                 app:srcCompat="@drawable/trx" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/imageViewBitcoin"
                 android:layout_width="110dp"
                 android:layout_height="130dp"
                 android:layout_margin="6dp"
